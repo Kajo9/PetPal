@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/score"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/gameFrame"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/game_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreLabel">
+
+        <TextView
+            android:id="@+id/gameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/game_over"
+            android:textColor="#ff22"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/player"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/puppy_player"
+            android:src="@drawable/puppy"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/poop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/poop"
+            android:src="@drawable/poop"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/cookie"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/cookie"
+            android:src="@drawable/dog_cookie"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/treat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/treat"
+            android:src="@drawable/dog_treat"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/highScoreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/high_score"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/startGame"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/montserrat_regular"
+                android:onClick="startGame"
+                android:text="@string/start"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/app_tips_text"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/care_tips"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"/>
+
+    <ImageView
+        android:id="@+id/pet_care_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:rotation="15"
+        android:contentDescription="@string/logo_of_pet_care_tips"
+        android:src="@drawable/paw"
+        app:layout_constraintTop_toTopOf="@id/app_tips_text"
+        app:layout_constraintBottom_toBottomOf="@id/app_tips_text"
+        app:layout_constraintStart_toEndOf="@id/app_tips_text"
+        android:layout_marginStart="19dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="160dp"
+        android:text="@string/diet"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"/>
+
+    <TextView
+        android:id="@+id/diet"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="130dp"
+        android:autofillHints="Diet"
+        android:background="@drawable/custom_editettext"
+        android:padding="5dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/fur_care"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"
+        />
+
+    <TextView
+        android:id="@+id/fur_care"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_editettext"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="fur_care"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/claw_maintenance"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"
+        />
+
+    <TextView
+        android:id="@+id/claw_maintenance"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/custom_editettext"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="claw_maintenance"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:text="@string/hygiene_and_cleanliness"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"
+        android:layout_marginTop="450dp"
+        />
+
+    <TextView
+        android:id="@+id/hygiene_and_cleanliness"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/custom_editettext"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="hygiene_and_cleanliness"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
